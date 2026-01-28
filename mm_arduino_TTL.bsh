@@ -1,0 +1,9 @@
+String pythonExe = "C:\\Users\\tur83376\\OneDrive - Temple University\\Coding Rig\\venv\\Scripts\\python.exe";
+String scriptPath = "C:\\Users\\tur83376\\OneDrive - Temple University\\Coding Rig\\stim_gui_plugin.py";
+
+try {
+    String[] cmd = {pythonExe, scriptPath};
+    Runtime.getRuntime().exec(cmd);
+} catch (Exception e) {
+    print("Error launching Python GUI: " + e);
+}
